@@ -1,1 +1,1 @@
-nuget pack RedCorners.nuspec
+nuget pack RedCorners.Components.ObjectStorage.nuspec
