@@ -2,12 +2,12 @@
 <package >
   <metadata>
     <id>RedCorners.Components.ObjectStorage</id>
-    <version>4.11.0</version>
+    <version>4.11.1</version>
     <title>RedCorners.Components.ObjectStorage</title>
     <authors>Saeed Afshari and NeatCapital OÜ</authors>
     <owners>NeatCapital OÜ</owners>
     <projectUrl>https://github.com/saeedafshari/RedCorners</projectUrl>
-    <iconUrl>http://ooze.redcorners.com/redcorners_components_objectstorage_logo.png</iconUrl>
+    <iconUrl>http://ooze.redcorners.com/redcorners_components_objectstorage_logo_2.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Easy cross-platform storage of settings as JSON in C#.</description>
     <releaseNotes>Easy cross-platform storage of settings as JSON in C#.</releaseNotes>
