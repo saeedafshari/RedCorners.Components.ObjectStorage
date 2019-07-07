@@ -34,8 +34,10 @@ namespace RedCorners.Components
         public string FilePath { get; private set; }
 
 
-        public ObjectStorage(string bucket = "Default", string basePath = null)
+        public ObjectStorage(string bucket = "Default", string basePath = null, JsonSerializerSettings serializerSettings = null)
         {
+            this.SerializerSettings = serializerSettings ?? this.SerializerSettings;
+
             basePath = basePath ?? DefaultBasePath();
 
             var type = typeof(T);
@@ -54,7 +56,7 @@ namespace RedCorners.Components
                 if (File.Exists(FilePath))
                 {
                     var json = File.ReadAllText(FilePath);
-                    Data = JsonConvert.DeserializeObject<T>(json);
+                    Data = JsonConvert.DeserializeObject<T>(json, SerializerSettings);
                 }
             }
             finally
@@ -92,9 +94,11 @@ namespace RedCorners.Components
         {
             lock (saveLock)
             {
-                var json = JsonConvert.SerializeObject(Data);
+                var json = JsonConvert.SerializeObject(Data, SerializerSettings);
                 File.WriteAllText(FilePath, json);
             }
         }
+
+        public JsonSerializerSettings SerializerSettings { get; set; } = new JsonSerializerSettings();
     }
 }

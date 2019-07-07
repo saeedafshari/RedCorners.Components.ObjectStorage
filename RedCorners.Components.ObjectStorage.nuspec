@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>RedCorners.Components.ObjectStorage</id>
-    <version>4.11.1</version>
+    <version>5.2.0</version>
     <title>RedCorners.Components.ObjectStorage</title>
     <authors>Saeed Afshari and NeatCapital OÜ</authors>
     <owners>NeatCapital OÜ</owners>
@@ -16,7 +16,7 @@
 
     <dependencies>
       <group targetFramework="netstandard2.0">
-		<dependency id="RedCorners" version="4.11.0" />
+		<dependency id="RedCorners" version="5.0.0" />
         <dependency id="Newtonsoft.Json" version="12.0.1" />
       </group>
     </dependencies>
