@@ -34,14 +34,14 @@ namespace RedCorners.Components
         public string FilePath { get; private set; }
 
 
-        public ObjectStorage(string bucket = "Default", string basePath = null, JsonSerializerSettings serializerSettings = null)
+        public ObjectStorage(string bucket = "Default", string basePath = null, string fileName = null, JsonSerializerSettings serializerSettings = null)
         {
             this.SerializerSettings = serializerSettings ?? this.SerializerSettings;
 
             basePath = basePath ?? DefaultBasePath();
 
             var type = typeof(T);
-            var typeFileName = type.FullName.Split(' ')[0].ToFileNameHash();
+            var typeFileName = fileName ?? type.FullName.Split(' ')[0].ToFileNameHash();
             this.FilePath = Path
                 .Combine(basePath, "ObjectStorage", bucket, typeFileName)
                 .CreateDirectoryAndReturn();
