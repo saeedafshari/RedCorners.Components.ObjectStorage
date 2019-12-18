@@ -2,22 +2,22 @@
 <package >
   <metadata>
     <id>RedCorners.Components.ObjectStorage</id>
-    <version>5.3.0</version>
+    <version>6.4.0</version>
     <title>RedCorners.Components.ObjectStorage</title>
-    <authors>Saeed Afshari and NeatCapital OÜ</authors>
+    <authors>eatCapital OÜ</authors>
     <owners>NeatCapital OÜ</owners>
-    <projectUrl>https://github.com/saeedafshari/RedCorners</projectUrl>
-    <iconUrl>http://ooze.redcorners.com/redcorners_components_objectstorage_logo_2.png</iconUrl>
+    <projectUrl>http://redcorners.com/objectstorage/</projectUrl>
+    <icon>redcorners_components_objectstorage_logo_2.png</icon>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Easy cross-platform storage of settings as JSON in C#.</description>
     <releaseNotes>Easy cross-platform storage of settings as JSON in C#.</releaseNotes>
     <copyright>Copyright 2019 NeatCapital OÜ</copyright>
-    <tags>Xamarin.Forms</tags>
+    <tags>Xamarin.Forms Xamarin Settings Storage Serialization JSON</tags>
 
     <dependencies>
       <group targetFramework="netstandard2.0">
-		<dependency id="RedCorners" version="5.0.0" />
-        <dependency id="Newtonsoft.Json" version="12.0.1" />
+		<dependency id="RedCorners" version="6.0.0" />
+        <dependency id="Newtonsoft.Json" version="12.0.3" />
       </group>
     </dependencies>
 
@@ -26,6 +26,7 @@
 
   <files>
     <file src="LICENSE.txt" target="" />
+	<file src="redcorners_components_objectstorage_logo_2.png" target="" />
     <file 
       src="RedCorners.Components.ObjectStorage\bin\Release\netstandard2.0\RedCorners.Components.ObjectStorage.dll" 
       target="lib\netstandard2.0\RedCorners.Components.ObjectStorage.dll" />

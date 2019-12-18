@@ -1,7 +1,7 @@
 RedCorners.Components.ObjectStorage enables easy cross-platform storage of settings as JSON in C#.
 
 NuGet: [https://www.nuget.org/packages/RedCorners.Components.ObjectStorage](https://www.nuget.org/packages/RedCorners.Components.ObjectStorage)
-GitHub: [https://github.com/saeedafshari/RedCorners.Components.ObjectStorage](https://github.com/saeedafshari/RedCorners.Components.ObjectStorage)
+GitHub: [https://github.com/samafshari/RedCorners.Components.ObjectStorage](https://github.com/samafshari/RedCorners.Components.ObjectStorage)
 
 ## Dependencies
 
